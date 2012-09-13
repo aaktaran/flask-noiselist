@@ -25,7 +25,7 @@ print os.path.join, _buildout_path
 del _buildout_path
 
 
-# bin\paster serve parts/etc/deploy.ini
+# bin/paster serve parts/etc/deploy.ini
 def make_app(global_conf={}, config=DEPLOY_CFG, debug=False):
     from noiselist import app
     
@@ -131,7 +131,6 @@ def run():
     def action_stop(dry_run=False):
         """Stop the application."""
         _serve('stop', dry_run=dry_run)
-    print "TEST3"
-    print make_shell.__doc__
+   
     werkzeug.script.run()
 
